@@ -1,0 +1,20 @@
+/* Auto-Generated Liberty (.lib) Snippet - INV_X1 */
+cell (INV_X1) {
+  area : 1.0;
+  pin (Y) {
+    direction : output;
+    function : "!A";
+    timing () {
+      related_pin : "A";
+      cell_fall (delay_template_4x4) {
+        index_1 ("10, 25, 50, 100"); /* Input Slew (ps) */
+        index_2 ("2, 5, 10, 20"); /* Output Load (fF) */
+        values ( \
+          "6.91, 13.03, 23.18, 43.49" \
+          "11.06, 17.28, 27.43, 47.73" \
+          "16.08, 24.36, 34.53, 54.84" \
+          "22.91, 35.71, 48.71, 69.06" );
+      }
+    }
+  }
+}
